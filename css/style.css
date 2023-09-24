@@ -259,6 +259,9 @@ h1 {
     width: 100%;
 }
 
+
+
+
 .col .setas {
     width: 100%;
 }
@@ -506,6 +509,19 @@ footer {
         width: 100%;
     }
 
+    .coluna-voos div{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+    }
+
+    .coluna-voos div button{
+        width: 50%;
+        
+    }
+
     .col .setas {
         width: 100%;
     }
@@ -549,4 +565,32 @@ footer {
     #nos{
         width: 100vw;
     }
+
+    .predios{
+        width: 80vw;
+        height: 50vh;
+        margin: auto;
+    }
+}
+
+
+/* RESPONSIVIDADE PARA TELAS MÉDIAS --800PX-- */
+@media screen and (max-width: 1200px) {
+
+    .predios {
+        height: 50vh;
+        width: 80vw;
+        margin-left: 0rem;
+    }
+
+    .coluna-voos div{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    
+    
 }
