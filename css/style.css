@@ -591,6 +591,11 @@ footer {
         
     }
 
+    .ida-volta-input div{
+        display: flex;
+        flex-direction: column;
+    }
+
     
     
 }
