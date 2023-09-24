@@ -19,7 +19,6 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation-name: fundo;
 }
 
 /* "página 02" */
@@ -28,7 +27,6 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation-name: fundo;
 }
 
 #entre-contato {
@@ -36,7 +34,6 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation-name: fundo;
 }
 
 
@@ -82,9 +79,6 @@ a {
     z-index: 0;
     /* colocando o fundo no fundo */
 
-
-    animation-duration: 2s;
-    animation-name: fundo
 }
 
 /* Atributos gerais */
