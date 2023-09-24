@@ -19,6 +19,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    animation-name: fundo;
 }
 
 /* "página 02" */
@@ -27,6 +28,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    animation-name: fundo;
 }
 
 #entre-contato {
@@ -34,6 +36,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    animation-name: fundo;
 }
 
 
@@ -78,6 +81,10 @@ a {
     /* tamanhos */
     z-index: 0;
     /* colocando o fundo no fundo */
+
+
+    animation-duration: 2s;
+    animation-name: fundo
 }
 
 /* Atributos gerais */
@@ -461,81 +468,21 @@ footer {
 
 }
 
-
-
-/* RESPONSIVIDADE PARA TELAS PEQUENAS --500PX-- */
-@media screen and (max-width: 600px) {
-
-    .txt-titulo {
-        font-size: 40px;
+@keyframes fundo {
+    from {
+        opacity: 0%;
     }
 
-    .sub-titulo {
-        font-size: 14px;
+    to {
+        opacity: 100%;
     }
-
-    .um div,
-    .dois div {
-        width: 25rem;
-    }
-
-    /* Tela 3 -  */
-    .kombi div,
-    .kombi div hr {
-        width: 50vw;
-    }
-
-    .kombi-img {
-        height: 25rem;
-
-    }
-
-    .kombi {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #nos{
-        width: 100vw;
-    }
-
-    /* tela 3 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
-    .predios {
-        height: 25vh;
-    }
-
-    /* voos grid (aeroportos) */
-    .coluna-voos {
-        width: 100%;
-    }
-
-    .coluna-voos div{
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        
-    }
-
-    .coluna-voos div button{
-        width: 50%;
-        
-    }
-
-    .col .setas {
-        width: 100%;
-    }
-
-
-    .predios {
-        height: 40vh;
-        margin-left: 0rem;
-    }
-    /* fundos nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
-
 }
 
-/* RESPONSIVIDADE PARA TELAS MÉDIAS --800PX-- */
+
+
+
+
+/* RESPONSIVIDADE PARA TELAS MÉDIAS --900PX-- */
 @media screen and (max-width: 900px) {
 
     .txt-titulo {
@@ -598,4 +545,72 @@ footer {
 
     
     
+}
+
+/* RESPONSIVIDADE PARA TELAS PEQUENAS --500PX-- */
+@media screen and (max-width: 600px) {
+
+    .txt-titulo {
+        font-size: 40px;
+    }
+
+    .sub-titulo {
+        font-size: 14px;
+    }
+
+    .um div,
+    .dois div {
+        width: 25rem;
+    }
+
+    /* Tela 3 -  */
+    .kombi div,
+    .kombi div hr {
+        width: 50vw;
+    }
+
+    .kombi-img {
+        height: 25rem;
+
+    }
+
+    .kombi {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nos{
+        width: 100vw;
+    }
+
+    /* tela 3 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+    .predios {
+        height: 25vh;
+    }
+
+    /* voos grid (aeroportos) */
+    .coluna-voos {
+        width: 100%;
+    }
+
+    .coluna-voos div{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+    }
+
+    .coluna-voos div button{
+        width: 50%;
+        
+    }
+
+
+    .predios {
+        height: 20vh;
+        margin-left: 0rem;
+    }
+    /* fundos nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+
 }

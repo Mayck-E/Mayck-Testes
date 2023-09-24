@@ -125,7 +125,8 @@
                     <!-- primeira opção -->
                     <form class="row ida-volta-input" id="opcao-voo-1">
 
-                        <div class="col">De onde você está saindo?
+                        <div class="col responsividade-linha">
+                            <span class=""> De onde você está saindo?</span>
                             <input class="airport" placeholder="Buscar por aeroportos" id="saida">
                         </div>
 
@@ -140,7 +141,7 @@
                             </div>
                         </div>
 
-                        <div class="col">Para onde você vai?
+                        <div class="col responsividade-linha"><span>Para onde você vai?</span>
                             <input class="airport" placeholder="Buscar por aeroportos" type="text" id="chegada">
                         </div>
                         <div class="row mt-3">
@@ -231,6 +232,36 @@
         </svg>
     </a>
 
+<!-- TESTES - popup para banner -->
+<div id="popup" class="popup position-fixed top-50 start-50 translate-middle">
+    <button type="button" class="btn-close" aria-label="Close" onclick="fechar()"></button>
+</div>
+
+<!-- mostrar dados -->
+<div id="mostrar" class="mostrar position-fixed top-50 start-50 translate-middle">
+    
+    <button type="button" class="btn-close" aria-label="Close" onclick="fechar()"></button>
+    <div class="position-absolute mt-3">
+        <br>
+        <span><b>De onde:</b></span>
+        <span id="s-saida" class="text-center"></span><br>
+        <span><b>Para onde:</b></span>
+        <span id="s-chegada" class="text-center"></span><br>
+
+        <span><b>Data de ida:</b></span>
+        <span id="s-data" class="text-center"></span><br>
+        <span><b>Data de volta:</b></span>
+        <span id="s-data2" class="text-center"></span><br>
+
+        <span><b>Passageiros:</b></span>
+        <span id="s-pessoas" class="text-center"></span><br><br>
+        
+        <button type="button" name="" id="ok" class="buscar-c-volta" value="OK" onclick="fechar(); ok()">OK</button>
+        
+    </div>
+</div>
+
+
     <footer>
         <br>
         <div class="d-flex w-100">
@@ -267,34 +298,7 @@
         </div>
     </footer>
 
-    <!-- TESTES - popup para banner -->
-    <!-- <div id="popup" class="popup position-fixed top-50 start-50 translate-middle">
-        <button type="button" class="btn-close" aria-label="Close" onclick="fechar()"></button>
-    </div> -->
-
-    <!-- mostrar dados -->
-    <div id="mostrar" class="mostrar position-fixed top-50 start-50 translate-middle">
-        
-        <button type="button" class="btn-close" aria-label="Close" onclick="fechar()"></button>
-        <div class="position-absolute mt-3">
-            <br>
-            <span><b>De onde:</b></span>
-            <span id="s-saida" class="text-center"></span><br>
-            <span><b>Para onde:</b></span>
-            <span id="s-chegada" class="text-center"></span><br>
-
-            <span><b>Data de ida:</b></span>
-            <span id="s-data" class="text-center"></span><br>
-            <span><b>Data de volta:</b></span>
-            <span id="s-data2" class="text-center"></span><br>
-
-            <span><b>Passageiros:</b></span>
-            <span id="s-pessoas" class="text-center"></span><br><br>
-            
-            <button type="button" name="" id="ok" class="buscar-c-volta" value="OK" onclick="fechar(); ok()">OK</button>
-            
-        </div>
-    </div>
+    
 </body>
 
 </html>
